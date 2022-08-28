@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(CppTddKataTemplate CXX)
+project(PrimeFactorsKata CXX)
 
 # ==== CONFIGURATION ====
 
@@ -11,11 +11,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # ==== BUILDING TARGET ==== #
 
 set(HEADERS
-    greeter.h
+    prime_factors.h
 )
 
 set(CLASS_SOURCES
-    greeter.cpp
+    prime_factors.cpp
 )
 
 list(TRANSFORM HEADERS PREPEND ${CMAKE_CURRENT_LIST_DIR}/src/)
