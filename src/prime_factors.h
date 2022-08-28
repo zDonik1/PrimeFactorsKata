@@ -6,3 +6,7 @@
  *************************************************************************/
 
 #pragma once
+
+#include <vector>
+
+std::vector<int> primeFactors(int n);

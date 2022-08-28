@@ -6,3 +6,8 @@
  *************************************************************************/
 
 #include "prime_factors.h"
+
+std::vector<int> primeFactors(int n)
+{
+    return {};
+}
