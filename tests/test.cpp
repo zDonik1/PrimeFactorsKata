@@ -34,3 +34,8 @@ TEST(PrimeFactorsTest, TestEight)
 {
     EXPECT_THAT(primeFactors(8), ElementsAreArray({2, 2, 2}));
 }
+
+TEST(PrimeFactorsTest, TestNine)
+{
+    EXPECT_THAT(primeFactors(9), ElementsAreArray({3, 3}));
+}

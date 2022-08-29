@@ -12,13 +12,9 @@ using namespace std;
 vector<int> primeFactors(int n)
 {
     vector<int> primes;
-    if (n > 1) {
-        while (n % 2 == 0) {
-            primes.push_back(2);
-            n /= 2;
-        }
-        if (n > 1) {
-            primes.push_back(n);
+    for (int candidate = 2; n > 1; ++candidate) {
+        for (; n % candidate == 0; n /= candidate) {
+            primes.push_back(candidate);
         }
     }
     return primes;
