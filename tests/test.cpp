@@ -24,3 +24,13 @@ TEST(PrimeFactorsTest, TestFour)
 {
     EXPECT_THAT(primeFactors(4), ElementsAreArray({2, 2}));
 }
+
+TEST(PrimeFactorsTest, TestSix)
+{
+    EXPECT_THAT(primeFactors(6), ElementsAreArray({2, 3}));
+}
+
+TEST(PrimeFactorsTest, TestEight)
+{
+    EXPECT_THAT(primeFactors(8), ElementsAreArray({2, 2, 2}));
+}
