@@ -7,7 +7,19 @@
 
 #include "prime_factors.h"
 
-std::vector<int> primeFactors(int n)
+using namespace std;
+
+vector<int> primeFactors(int n)
 {
-    return {};
+    vector<int> primes;
+    if (n > 1) {
+        if (n % 2 == 0) {
+            primes.push_back(2);
+            n /= 2;
+        }
+        if (n > 1) {
+            primes.push_back(n);
+        }
+    }
+    return primes;
 }

@@ -26,5 +26,5 @@ find_package(GTest CONFIG REQUIRED)
 # ==== BUILDING TARGET ==== #
 
 add_executable(${PROJECT_NAME} test.cpp ${CLASS_SOURCES})
-target_link_libraries(${PROJECT_NAME} GTest::gtest_main)
+target_link_libraries(${PROJECT_NAME} GTest::gtest_main GTest::gmock)
 target_include_directories(${PROJECT_NAME} PUBLIC ../src)
